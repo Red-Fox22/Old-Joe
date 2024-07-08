@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: #1D1D1B;
+    vertical-align: top;
+    color: #E4E2DD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 79px;
+}
+
+main {
+    margin: 50px
+}
+
+button {
+    background-color: #1D1D1B;
+    padding: 30px;
+    color: #E4E2DD;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #d3d3d33d;
+    transform: scale(1.0);
+    /* sem aumento de tamanho*/
+    transition: 400ms ease;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2 {
+    margin: 20px;
+
+    /*Aileron Regular*/
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 0.8;
+}
+
+.item {
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.preco {
+    /*Aileron Light Italic*/
+    font-family: "aileron", sans-serif;
+    font-weight: 270;
+    font-style: italic;
+}
+
+.container {
+    display: grid;
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
