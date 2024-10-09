@@ -79,16 +79,17 @@ h2 {
 .element-on-top {
     position: fixed;
     text-align: center;
-    
+    justify-content: left;
     z-index: 1;
     color: white;
+    
 
     /*Aileron Light */
     font-family: "aileron", sans-serif;
     font-weight: 300;
     font-style: normal;
 
-    font-size: 20vh;
+    font-size: 15vh;
     padding: 3vw;
     
 }
