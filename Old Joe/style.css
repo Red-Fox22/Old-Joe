@@ -75,3 +75,53 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
 }
+
+.element-on-top {
+    position: fixed;
+    text-align: center;
+    
+    z-index: 1;
+    color: white;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 20vh;
+    padding: 3vw;
+    
+}
+
+.image-container {
+    position: relative;
+    z-index: 0;
+    width: auto;
+    height: 410px;
+    background-image: url('./bom_dia.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container img {
+    display: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1d1d1bad;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1d1d1bad;
+}
