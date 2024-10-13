@@ -1,5 +1,9 @@
 * {
     margin: 0px;
+        /*Aileron Light */
+        font-family: "aileron", sans-serif;
+        font-weight: 300;
+        font-style: normal;
 }
 
 header {
@@ -16,7 +20,7 @@ main {
     margin: 50px
 }
 
-button {
+.navegation-b {
     background-color: #1D1D1B;
     padding: 30px;
     color: #E4E2DD;
@@ -28,7 +32,7 @@ button {
     font-style: normal;
 }
 
-button:hover {
+.navegation-b:hover {
     background-color: #d3d3d33d;
     transform: scale(1.0);
     /* sem aumento de tamanho*/
@@ -77,8 +81,8 @@ h2 {
 }
 
 .element-on-top {
-    position: fixed;
-    text-align: center;
+    position: relative;
+    text-align: left;
     justify-content: left;
     z-index: 1;
     color: white;
@@ -110,19 +114,31 @@ h2 {
 }
 
 
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
+.produto-p{
+    width: 15vw;
+    height: auto;
 }
-
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #1d1d1bad;
-
+.principais-produtos{
+    background-color: white;
+    width: 25vw;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 12px;
+    margin: 2vh ;
+    flex-direction: line;
+    justify-content: center;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #1d1d1bad;
+.h1-produtos{
+    font-size: 7vh;
+    padding: 3vw;
+}
+h3{
+    font-weight: bold;
+}
+.descricao{
+    font-style: oblique;
+}
+.principais-produtos{
+    background-image: url('./background-products.png');
 }
