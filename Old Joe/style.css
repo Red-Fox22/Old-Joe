@@ -1,9 +1,13 @@
 * {
     margin: 0px;
-        /*Aileron Light */
-        font-family: "aileron", sans-serif;
-        font-weight: 300;
-        font-style: normal;
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
 }
 
 header {
@@ -16,8 +20,18 @@ header {
     max-height: 79px;
 }
 
-main {
-    margin: 50px
+
+footer {
+
+    background-color: #1D1D1B;
+    color: #E4E2DD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 30px;
+    margin: 0;
 }
 
 .navegation-b {
@@ -42,103 +56,4 @@ main {
     font-family: "aileron", sans-serif;
     font-weight: 300;
     font-style: normal;
-}
-
-h2 {
-    margin: 20px;
-
-    /*Aileron Regular*/
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    line-height: 0.8;
-}
-
-.item {
-    /*Aileron Light */
-    font-family: "aileron", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.preco {
-    /*Aileron Light Italic*/
-    font-family: "aileron", sans-serif;
-    font-weight: 270;
-    font-style: italic;
-}
-
-.container {
-    display: grid;
-    display: flex;
-    flex-direction: line;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-
-.element-on-top {
-    position: relative;
-    text-align: left;
-    justify-content: left;
-    z-index: 1;
-    color: white;
-    
-
-    /*Aileron Light */
-    font-family: "aileron", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    font-size: 15vh;
-    padding: 3vw;
-    
-}
-
-.image-container {
-    position: relative;
-    z-index: 0;
-    width: auto;
-    height: 410px;
-    background-image: url('./bom_dia.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.image-container img {
-    display: none;
-}
-
-
-.produto-p{
-    width: 15vw;
-    height: auto;
-}
-.principais-produtos{
-    background-color: white;
-    width: 25vw;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    border-radius: 12px;
-    margin: 2vh ;
-    flex-direction: line;
-    justify-content: center;
-}
-.h1-produtos{
-    font-size: 7vh;
-    padding: 3vw;
-}
-h3{
-    font-weight: bold;
-}
-.descricao{
-    font-style: oblique;
-}
-.principais-produtos{
-    background-image: url('./background-products.png');
 }
