@@ -36,13 +36,11 @@ h3{
     grid-template-rows: repeat(2,auto);
     gap: 12px;
     text-align: center;
-}
-
-.produto img{
-    margin: 12px 0;
-    border: white solid 2px;
+    border-color: #1D1D1B;
+    border: 10px;
     border-radius: 8px;
 }
+
 .preco {
     /*Aileron Light Italic*/
     font-family: "aileron", sans-serif;
