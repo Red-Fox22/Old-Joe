@@ -36,8 +36,7 @@ h3{
     grid-template-rows: repeat(2,auto);
     gap: 12px;
     text-align: center;
-    border-color: #1D1D1B;
-    border: 10px;
+    border: 1px solid #1D1D1B;
     border-radius: 8px;
 }
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/iwv4ytx.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleComponentes.css">
+    <link rel="stylesheet" href="styleProdutos.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Old Joe - Menu</title>
+</head>
+
+<body>
+
+    <header>
+        <h2 id="logo" onclick="location.href = 'menu.html'">Old<br>Joe</h2>
+
+        <div id="menus">
+            <button onclick="location.href = 'menu.html'" class="navegation-b">Home</button>
+            <button onclick="location.href = 'cafes.html'" class="navegation-b">Cafés</button>
+            <button onclick="location.href = 'blog.html'" class="navegation-b">Blog</button>
+        </div>
+    </header>
+
+    <form action="">
+        <label for="nome" >Nome:</label><br>
+        <input type="text" id="nome" required>
+        <br>
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" required>
+        <br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" required>
+        <br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="text" id="telefone" required>
+        <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required>
+        <br>
+
+        <label for="senha">Criar Senha:</label><br>
+        <input type="password" id="senha" required>
+        <br>
+
+        <label for="confirmarSenha">Confirme sua Senha:</label><br>
+        <input type="password" id="confirmarSenha" required>
+        <br>
+
+        <hr>
+
+        <h2>Endereço</h2>
+        <label for="cep"></label>CEP</label><br>
+        <input type="text" id="cep"><br>
+        
+        <label for="logradouro">Logradouro:</label><br>
+        <input type="text" id="logradouro" required><br>
+        
+        <label for="numero"></label>Número</label><br>
+        <input type="text" id="numero" required><br>
+
+        <label for="complemento"></label>Complemento</label><br>
+        <input type="text" id="complemento"><br>
+        
+        <label for="localidade"></label>Localidade</label><br>
+        <input type="text" id="localidade"><br>
+        
+        <label for="uf"></label>UF</label><br>
+        <input type="text" id="uf"><br>
+        
+
+        <button type="submit" id="cadastrarUsuario">Cadastrar</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var senha = document.getElementById("senha").value;
+            var confirmarSenha = document.getElementById("confirmarSenha").value;
+
+            if (senha !== confirmarSenha) {
+                alert("As senhas não são iguais.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+    <button type="submit" id="cadastrarUsuario">Cadastrar</button>
+
+    </form>
