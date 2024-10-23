@@ -54,7 +54,7 @@ h2 {
     z-index: 0;
     width: auto;
     height: 410px;
-    background-image: url('./bom_dia.png');
+    background-image: url('../bom_dia.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,33 @@
+header {
+    background-color: #1D1D1B;
+    vertical-align: top;
+    color: #E4E2DD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 79px;
+}
+
+.navegation-b {
+    background-color: #1D1D1B;
+    padding: 30px;
+    color: #E4E2DD;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navegation-b:hover {
+    background-color: #d3d3d33d;
+    transform: scale(1.0);
+    /* sem aumento de tamanho*/
+    transition: 400ms ease;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
