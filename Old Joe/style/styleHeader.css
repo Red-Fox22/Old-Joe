@@ -8,7 +8,7 @@ header {
     max-height: 79px;
 }
 
-.navegation-b {
+.navegation-btn {
     background-color: #1D1D1B;
     padding: 30px;
     color: #E4E2DD;
@@ -20,7 +20,7 @@ header {
     font-style: normal;
 }
 
-.navegation-b:hover {
+.navegation-btn:hover {
     background-color: #d3d3d33d;
     transform: scale(1.0);
     /* sem aumento de tamanho*/
