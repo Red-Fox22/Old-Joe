@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+
+    /*_________ Font _________*/
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*----------------------------------- Header -----------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    background-color: #E4E2DD;
+    padding: 20px;
+    vertical-align: top;
+    color: #1D1D1B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    margin: 2px 50px 2px 2px;
+
+    /*Aileron Regular*/
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 0.8;
+}
+
+.navegation-btn {
+    padding: 30px;
+    color: #1D1D1B;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navegation-btn:hover {
+    border-radius: 5px;
+    background-color: #1d1d1b34;
+    transform: scale(1.0);
+    transition: 400ms ease;
+}
+
+.voltar {
+    background-color: #1d1d1b34;
+    padding: 15px;
+    color: #1D1D1B;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.voltar:hover {
+    border-radius: 5px;
+    background-color: #1d1d1b34;
+    transform: scale(1.0);
+    transition: 400ms ease
+}
+
+
+/*----------------------------------- Footer -----------------------------------*/
+
+footer {
+    align-items: center;
+    background-color: #E4E2DD;
+    padding: 20px;
+    color: rgb(29, 29, 27);
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+}
+
+.navegation {
+    display: flex;
+
+}
+
+.redes-sociais a {
+    color: rgba(29, 29, 27, 0.459);
+    font-style: italic;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.coluna {
+    color: rgba(29, 29, 27, 0.637);
+    padding: 20px;
+    padding-right: 40px;
+}
+
+/*------------------------------------ Corpo -----------------------------------*/
+
+.corpo {
+    padding: 50px 100px;
+}
+.secoes{
+    padding: 5px 0 ;
+}
+
+
+/*------------------------------------ Menu ------------------------------------*/
+
+button {
+    background-color: #1D1D1B;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 7px 0;
+}
+
+.digitar input{
+    width: 15vw;
+}
+
+
+/*------------------------------------------------------------------------------*/

@@ -1,0 +1,34 @@
+/*---------------------------------- Detalhes ----------------------------------*/
+
+.image-container {
+    position: relative;
+    z-index: 0;
+    width: auto;
+    height: 410px;
+    background-image: url('../img/others/bom_dia.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container img {
+    display: none;
+}
+
+.element-on-top {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    z-index: 1;
+    color: white;
+    
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 15vh;
+    padding: 3vw;
+    
+}
