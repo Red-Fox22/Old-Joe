@@ -65,7 +65,7 @@ header {
 
 .voltar:hover {
     border-radius: 5px;
-    background-color: #1d1d1b34;
+    background-color: #1d1d1ba4;
     transform: scale(1.0);
     transition: 400ms ease
 }
@@ -114,6 +114,15 @@ footer {
     padding: 5px 0 ;
 }
 
+/*------------------------------ Tela Inicial Adm ------------------------------*/
+
+.tela-inicial-adm{
+    display: flex
+}
+.texto{
+    align-content: center;
+    padding: 0 10vh;
+}
 
 /*------------------------------------ Menu ------------------------------------*/
 
@@ -132,3 +141,4 @@ button {
 
 
 /*------------------------------------------------------------------------------*/
+

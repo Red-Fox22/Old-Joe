@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../style/administrador.css">
     <link rel="shortcut icon" href="../../img/others/favicon_claro.png" type="image/x-icon">
     <script src="cadastrarProduto.js"></script>
-    <title>Old Joe - Home</title>
+    <title>Area do Administrador - Cadastrar Produto</title>
 </head>
 
 <body>
@@ -20,6 +20,7 @@
         <div class="menus">
             <a href='../../index.html' class="voltar" aria-label="Voltar para o site do usuário">Voltar</a>
             <a href='cadastrarProduto.html' class=" navegation-btn">Cadastrar Novo Produto</a>
+            <a href='cadastrarUsuario-admVersion.html' class=" navegation-btn">Cadastrar Novo Usuário</a>
             <a href='postagemBlog.html' class=" navegation-btn">Escrever Nova Postagem</a>
         </div>
     </header>
@@ -35,24 +36,24 @@
             <div class="digitar">
 
                 <div class="secoes">
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" placeholder="Digite o nome do produto" required><br>
+                    <label for="nomeProduto">Nome:</label><br>
+                    <input type="text" id="nomeProduto" placeholder="Digite o nome do produto" required><br>
                 </div>
 
                 <div class="secoes">
-                    <label for="descricao">Descrição:</label><br>
-                    <input type="text" id="descricao" placeholder="Digite descreva o produto" required><br>
+                    <label for="descricaoProduto">Descrição:</label><br>
+                    <input type="text" id="descricaoProduto" placeholder="Digite descreva o produto" required><br>
                 </div>
 
                 <div class="secoes">
-                    <label for="preco">Preço:</label><br>
-                    <input type="number" id="preco" name="preco" min="0" step="0.01"
+                    <label for="precoProduto">Preço:</label><br>
+                    <input type="number" id="precoProduto" name="precoProduto" min="0" step="0.01"
                         placeholder="0,00" required><br>
                 </div>
 
                 <div class="secoes">
-                    <label for="quantidade">Quantidade:</label><br>
-                    <input type="number" id="quantidade" min="0" placeholder="Digite a quantidade do produto"
+                    <label for="quantidadeProduto">Quantidade:</label><br>
+                    <input type="number" id="quantidadeProduto" min="0" placeholder="Digite a quantidade do produto"
                         required><br>
                 </div>
 
@@ -76,15 +77,16 @@
 
             <div class="coluna">
                 <img src="../../img/others/logo-completa-escura.png"
-                    alt="Logo Old Joe: Silhueta de um cachorro labrador em cima do nome da marca (old joe coffee)"
+                    alt="Logo Old Joe: Silhueta de um cachorro labrador em cima do nomeProduto da marca (old joe coffee)"
                     height="220px">
             </div>
 
             <div class="coluna">
                 <h3>Redes Sociais</h3>
                 <div class="redes-sociais">
-                    <a href="https://www.instagram.com/old.joe.coffee/">Instagram</a>
-                    <a href="https://open.spotify.com/user/31x36lom4s67ynzgcxl3djxxnlna">Spotify</a>
+                    <a href="https://www.instagram.com/old.joe.coffee/" aria-label="Link para o Instagram do Old Joe Coffee">Instagram</a>
+                    <a href="https://open.spotify.com/user/31x36lom4s67ynzgcxl3djxxnlna"  aria-label="Link para o Spotify do Old Joe Coffee">Spotify</a>
+                    <a href="https://www.threads.net/@old.joe.coffee?xmt=AQGzaIOIu4jRax2pIqTQ9PyaX8gBUulAjYH4wVVHbCmGcPU"  aria-label="Link para o Threads do Old Joe Coffee">Threads</a>
                 </div>
             </div>
             <div class="coluna">
