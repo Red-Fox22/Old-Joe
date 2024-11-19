@@ -19,7 +19,7 @@ cadastrarProduto.addEventListener('click', (e)=>{
         imagem: imagem
     }
 
-    fetch('http://localhost:3000/Produto', {
+    fetch('http://localhost:3000/produto', {
         method: "POST",
         headers:{
             'Content-Type': 'application/json'
