@@ -35,22 +35,90 @@
     <div class="corpo">
         <h1>Cadastrar Usuário</h1><br>
         <form action="">
-            <h2 style="font-style: italic;">Perfil do Usuario</h2>
+            <h2 style="font-style: italic;">Perfil do Usuário</h2>
 
             <div class="digitar">
                 <div class="secoes">
                     <label for="nomeCliente">Nome:</label><br>
-                    <input type="text" id="nomeCliente" placeholder="Digite o nome do Usuario" required><br>
+                    <input type="text" id="nomeCliente" placeholder="Digite o nome do Usuário" required><br>
                 </div>
 
                 <div class="secoes">
                     <label for="sobrenomeCliente">Sobrenome:</label><br>
-                    <input type="text" id="sobrenomeCliente" placeholder="Digite o sobrenome do Usuario" required><br>
+                    <input type="text" id="sobrenomeCliente" placeholder="Digite o sobrenome do Usuário" required><br>
                 </div>
 
                 <div class="secoes">
                     <label for="cpfCliente">CPF:</label><br>
-                    <input type="text" id="cpfCliente" placeholder="Digite o CPF do Usuario" required><br>
+                    <input type="text" id="cpfCliente" placeholder="Digite o CPF do Usuário" required><br>
+                </div>
+
+                <div class="secoes">
+                    <script>
+                        function mascaraTelefone(event) {
+                            let input = event.target;
+                            let value = input.value.replace(/\D/g, '');
+
+                            if (value.length <= 2) {
+                                value = value.replace(/(\d{2})(\d{0,9})/, '($1) $2');
+                            } else if (value.length <= 6) {
+                                value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                            } else {
+                                value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                            }
+
+                            input.value = value;
+                        }
+                    </script>
+                    <label for="telefone">Número de Telefone:</label><br>
+                    <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"
+                        aria-label="Digite o número de telefone do Usuário" maxlength="15"
+                        oninput="mascaraTelefone(event)" required>
+                </div>
+
+                <div class="secoes">
+                    <label for="emailCliente">Email:</label><br>
+                    <input type="text" id="emailCliente" placeholder="Digite o Email do Usuário" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" placeholder="Crie uma senha para o Usuário" required><br>
+                </div>
+
+                <br><hr><br>
+
+                <h2 style="font-style: italic;">Endereço</h2>
+                <div class="secoes">
+                    <label for="logradouro">Logradouro:</label><br>
+                    <input type="text" id="logradouro" placeholder="Digite o logradouro/rua" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="numero">Número:</label><br>
+                    <input type="text" id="numero" placeholder="Digite o número do endereço" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="complemento">Complemento:</label><br>
+                    <input type="text" id="complemento" placeholder="Digite o complemento do endereço"><br>
+                </div>
+                <div class="secoes">
+                    <label for="bairro">Complemento:</label><br>
+                    <input type="text" id="bairro" placeholder="Digite o bairro"><br>
+                </div>
+                <div class="secoes">
+                    <label for="localidade">Localidade:</label><br>
+                    <input type="text" id="localidade" placeholder="Digite a localidade/cidade"><br>
+                </div>
+                <div class="secoes">
+                    <label for="uf">UF:</label><br>
+                    <input type="text" id="uf" placeholder="Digite a UF/Estado"><br>
+                </div>
+                <div class="secoes">
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" placeholder="Digite o CEP"><br>
+                </div>
+                <div class="secoes">
+                    <label for="status">Status:</label><br>
+                    <input type="text" id="status" placeholder="Digite o Status do Usuário"><br>
                 </div>
 
             </div>
@@ -62,9 +130,7 @@
 
 
 
-
-
-
+    </head>
 
 
 
@@ -91,6 +157,8 @@
                         aria-label="Link para o Spotify do Old Joe Coffee">Spotify</a>
                     <a href="https://www.threads.net/@old.joe.coffee?xmt=AQGzaIOIu4jRax2pIqTQ9PyaX8gBUulAjYH4wVVHbCmGcPU"
                         aria-label="Link para o Threads do Old Joe Coffee">Threads</a>
+                    <a href="https://github.com/Red-Fox22"
+                        aria-label="Link para o GitHub da programadora do site Old Joe Coffee">GitHub</a>
                 </div>
             </div>
             <div class="coluna">
@@ -98,6 +166,13 @@
                 <div class="redes-sociais">
                     <a href="./administrador.html">Área do Administrador</a>
                     <a href="../../index.html">E-Commerce</a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h3>Blog</h3>
+                <div class="redes-sociais">
+                    <a href="../ops.html">Receitas</a>
+                    <a href="../ops.html">Tipos de Café</a>
                 </div>
             </div>
 
