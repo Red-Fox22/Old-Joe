@@ -105,8 +105,8 @@ footer {
     padding-right: 40px;
 }
 
-.coluna a:hover{
-    color:#82A69C
+.coluna a:hover {
+    color: #82A69C
 }
 
 /*------------------------------------ Corpo -----------------------------------*/
@@ -151,10 +151,12 @@ button {
     display: flex;
     flex-direction: row;
 }
-.f1{
+
+.f1 {
     padding-right: 30px;
 }
-.f1 a{
+
+.f1 a {
     padding: 30px;
     padding-left: 0;
     margin-left: 0;
@@ -166,10 +168,28 @@ button {
     font-weight: 300;
     font-style: normal;
 }
-.f1 a:hover{
-    color:#82A69C
+
+.f1 a:hover {
+    color: #82A69C
 }
-.funcoes_adm a{
+
+.funcoes_adm a {
     padding-left: 0;
     padding: 5px;
+}
+
+.ops h1 {
+    font-size: 100px;
+}
+.ops{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.labrador{
+    margin-top: -20px;
+    height: 400px;
 }
