@@ -69,7 +69,10 @@ header {
     transform: scale(1.0);
     transition: 400ms ease
 }
-
+.login{
+    position: fixed;
+    margin-left: 1250px;
+}
 
 /*----------------------------------- Footer -----------------------------------*/
 

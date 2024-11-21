@@ -106,5 +106,5 @@ Reabastecimento.belongsTo(Estoque, {
 })
 
 
-module.exports = { Cliente, Pedido, Entrega, Pagamento, 
+module.exports = { Cliente, Pedido, Fabricante, Entrega, Pagamento, 
     ItemPedido, Produto, Estoque, Reabastecimento }

@@ -5,6 +5,7 @@ const conn = require("./db/conn")
 
 const controllerCliente = require("./controller/controllerCliente")
 const controllerProduto = require("./controller/controllerProduto")
+const controllerFabricante = require("./controller/controllerFabricante")
 
 
 const PORT = 3000
@@ -15,10 +16,19 @@ const hostname = 'localhost'
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cors())
+/*================== Controllers =================*/
+
+
+app.post('/cliente', controllerCliente.cadastrarCliente)
+app.put('/cliente', controllerCliente.atualizarCliente)
 
 /*------------------------------------------------*/
 
-app.post('/cliente', controllerCliente.cadastrarCliente)
+app.post('/produto', controllerProduto.cadastrarProduto)
+
+/*------------------------------------------------*/
+
+app.post('/fabricante', controllerFabricante.cadastrarFabricante)
 
 /*------------------------------------------------*/
 

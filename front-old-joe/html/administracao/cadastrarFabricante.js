@@ -52,6 +52,6 @@ cadastrarFabricante.addEventListener('click', (e) => {
             alert('Fabricante Cadastrado com Sucesso!')
         })
         .catch((err) => {
-            console.error("Não foi possível cadastrar o Usuário", err)
+            console.error("Não foi possível cadastrar o Fabricante", err)
         })
 })

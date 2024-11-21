@@ -4,14 +4,15 @@ let cadastrarProduto = document.getElementById('cadastrarProduto')
 cadastrarProduto.addEventListener('click', (e)=>{
     e.preventDefault()
 
-    let codFabricante = document.getElementById('codFabricante').value
+    let fabricanteId = document.getElementById('fabricanteId').value
     let nomeProduto = document.getElementById('nomeProduto').value
     let descricaoProduto = document.getElementById('descricaoProduto').value
     let precoProduto = document.getElementById('precoProduto').value
+    let quantidadeProduto = document.getElementById('quantidadeProduto').value
    				
 
     const dados = {
-        codFabricante: codFabricante,
+        fabricanteId: fabricanteId,
         nomeProduto: nomeProduto,
         descricaoProduto: descricaoProduto,
         precoProduto: precoProduto,
