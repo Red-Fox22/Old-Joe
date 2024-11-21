@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/iwv4ytx.css">
     <link rel="stylesheet" href="../../style/administrador.css">
     <link rel="shortcut icon" href="../../img/others/favicon_claro.png" type="image/x-icon">
-    <script src="cadastrarProduto.js"></script>
+    <script src="cadastrarProduto.js" defer></script>
     <title>Area do Administrador - Cadastrar Produto</title>
 </head>
 
@@ -20,8 +20,9 @@
         <div class="menus">
             <a href='../../index.html' class="voltar" aria-label="Voltar para o site do usuário">Voltar</a>
             <a href='cadastrarProduto.html' class=" navegation-btn">Cadastrar Novo Produto</a>
-            <a href='cadastrarUsuario-admVersion.html' class=" navegation-btn">Cadastrar Novo Usuário</a>
-            <a href='postagemBlog.html' class=" navegation-btn">Escrever Nova Postagem</a>
+            <a href='cadastrarCliente-admVersion.html' class=" navegation-btn">Cadastrar Novo Cliente</a>
+            <a href='cadastrarFabricante.html' class=" navegation-btn">Cadastrar Fabricante</a>
+            <a href='administrador.html' class=" navegation-btn">Mais Funções...</a>
         </div>
     </header>
 
@@ -35,6 +36,10 @@
 
             <div class="digitar">
 
+                <div class="secoes">
+                    <label for="codFabricante">Código do Fabricante:</label><br>
+                    <input type="text" id="codFabricante" placeholder="Digite o Código do Fabricante" required><br>
+                </div>
                 <div class="secoes">
                     <label for="nomeProduto">Nome:</label><br>
                     <input type="text" id="nomeProduto" placeholder="Digite o nome do produto" required><br>
@@ -59,10 +64,10 @@
 
             </div>
 
-            <div class="secoes">
+            <!-- <div class="secoes">
                 <label for="imagem">Imagem:</label><br>
                 <input type="file" name="imagem" accept="image/*" required><br>
-            </div>
+            </div> -->
 
             <br>
             <hr><br>
@@ -77,7 +82,7 @@
 
             <div class="coluna">
                 <img src="../../img/others/logo-completa-escura.png"
-                    alt="Logo Old Joe: Silhueta de um cachorro labrador em cima do nomeProduto da marca (old joe coffee)"
+                    alt="Logo Old Joe: Silhueta de um cachorro labrador em cima do nome da marca (old joe coffee)"
                     height="220px">
             </div>
 

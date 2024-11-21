@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/iwv4ytx.css">
+    <link rel="stylesheet" href="../../style/administrador.css">
+    <link rel="shortcut icon" href="../../img/others/favicon_claro.png" type="image/x-icon">
+    <script src="cadastrarCliente.js" defer></script>
+    <title>Area do Administrador - Cadastrar Cliente</title>
+</head>
+
+<body>
+
+    <!-- --------------------- Header --------------------- -->
+
+    <header>
+        <h2 class="logo" onclick="location.href = 'administrador.html'">Old<br>Joe</h2>
+        <div class="menus">
+            <a href='../../index.html' class="voltar" aria-label="Voltar para o site do usuário">Voltar</a>
+            <a href='cadastrarProduto.html' class=" navegation-btn">Cadastrar Novo Produto</a>
+            <a href='cadastrarCliente-admVersion.html' class=" navegation-btn">Cadastrar Novo Cliente</a>
+            <a href='cadastrarFabricante.html' class=" navegation-btn">Cadastrar Fabricante</a>
+            <a href='administrador.html' class=" navegation-btn">Mais Funções...</a>
+        </div>
+    </header>
+
+    <!-- -------------------------------------------------- -->
+
+
+
+
+
+
+    <div class="corpo">
+        <h1>Cadastrar Cliente</h1><br>
+        <form action="">
+            <h2 style="font-style: italic;">Perfil do Cliente</h2>
+
+            <div class="digitar">
+                <div class="secoes">
+                    <label for="nomeCliente">Nome:</label><br>
+                    <input type="text" id="nomeCliente" placeholder="Digite o nome do Cliente" required><br>
+                </div>
+
+                <div class="secoes">
+                    <label for="sobrenomeCliente">Sobrenome:</label><br>
+                    <input type="text" id="sobrenomeCliente" placeholder="Digite o sobrenome do Cliente" required><br>
+                </div>
+
+                <div class="secoes">
+                    <label for="cpfCliente">CPF:</label><br>
+                    <input type="text" id="cpfCliente" placeholder="Digite o CPF do Cliente" required><br>
+                </div>
+
+                <div class="secoes">
+                    <script>
+                        function mascaraTelefone(event) {
+                            let input = event.target;
+                            let value = input.value.replace(/\D/g, '');
+
+                            if (value.length <= 2) {
+                                value = value.replace(/(\d{2})(\d{0,9})/, '($1) $2');
+                            } else if (value.length <= 6) {
+                                value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                            } else {
+                                value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                            }
+
+                            input.value = value;
+                        }
+                    </script>
+                    <label for="telefoneCliente">Número de Telefone:</label><br>
+                    <input type="text" id="telefoneCliente" name="telefone" placeholder="(XX) XXXXX-XXXX"
+                        aria-label="Digite o número de telefone do Cliente" maxlength="15"
+                        oninput="mascaraTelefone(event)" required>
+                </div>
+
+                <div class="secoes">
+                    <label for="emailCliente">Email:</label><br>
+                    <input type="text" id="emailCliente" placeholder="Digite o Email do Cliente" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" placeholder="Crie uma senha para o Cliente" required><br>
+                </div>
+
+                <br><hr><br>
+
+                <h2 style="font-style: italic;">Endereço</h2>
+                <div class="secoes">
+                    <label for="logradouro">Logradouro:</label><br>
+                    <input type="text" id="logradouro" placeholder="Digite o logradouro/rua" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="numero">Número:</label><br>
+                    <input type="text" id="numero" placeholder="Digite o número do endereço" required><br>
+                </div>
+                <div class="secoes">
+                    <label for="complemento">Complemento:</label><br>
+                    <input type="text" id="complemento" placeholder="Digite o complemento do endereço"><br>
+                </div>
+                <div class="secoes">
+                    <label for="bairro">Bairro:</label><br>
+                    <input type="text" id="bairro" placeholder="Digite o bairro"><br>
+                </div>
+                <div class="secoes">
+                    <label for="localidade">Localidade:</label><br>
+                    <input type="text" id="localidade" placeholder="Digite a localidade/cidade"><br>
+                </div>
+                <div class="secoes">
+                    <label for="uf">UF:</label><br>
+                    <input type="text" id="uf" placeholder="Digite a UF/Estado"><br>
+                </div>
+                <div class="secoes">
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" placeholder="Digite o CEP"><br>
+                </div>
+                <div class="secoes">
+                    <label for="statusCliente">Status:</label><br>
+                    <input type="text" id="statusCliente" placeholder="Digite o Status do Cliente"><br>
+                </div>
+
+            </div>
+            <br>
+            <hr><br>
+            <button type="submit" id="cadastrarCliente">Cadastrar Cliente</button>
+        </form>
+    </div>
+
+
+
+    </head>
+
+
+
+
+
+
+    <!-- --------------------- Footer --------------------- -->
+
+    <footer>
+        <div class="navegation">
+
+            <div class="coluna">
+                <img src="../../img/others/logo-completa-escura.png"
+                    alt="Logo Old Joe: Silhueta de um cachorro labrador em cima do nome da marca (old joe coffee)"
+                    height="220px">
+            </div>
+
+            <div class="coluna">
+                <h3>Redes Sociais</h3>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/old.joe.coffee/"
+                        aria-label="Link para o Instagram do Old Joe Coffee">Instagram</a>
+                    <a href="https://open.spotify.com/user/31x36lom4s67ynzgcxl3djxxnlna"
+                        aria-label="Link para o Spotify do Old Joe Coffee">Spotify</a>
+                    <a href="https://www.threads.net/@old.joe.coffee?xmt=AQGzaIOIu4jRax2pIqTQ9PyaX8gBUulAjYH4wVVHbCmGcPU"
+                        aria-label="Link para o Threads do Old Joe Coffee">Threads</a>
+                    <a href="https://github.com/Red-Fox22"
+                        aria-label="Link para o GitHub da programadora do site Old Joe Coffee">GitHub</a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h3>Áreas</h3>
+                <div class="redes-sociais">
+                    <a href="./administrador.html">Área do Administrador</a>
+                    <a href="../../index.html">E-Commerce</a>
+                </div>
+            </div>
+            <div class="coluna">
+                <h3>Blog</h3>
+                <div class="redes-sociais">
+                    <a href="../ops.html">Receitas</a>
+                    <a href="../ops.html">Tipos de Café</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <div class="direitos">
+            <br>
+            <p>&copy; 2024 Old Joe. Todos os direitos reservados. — Desenvolvido por <a
+                    href="https://github.com/Red-Fox22" style="color: #1D1D1B">Red-Fox22</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -49,6 +49,7 @@ header {
     transform: scale(1.0);
     transition: 400ms ease;
 }
+
 .voltar {
     background-color: #d3d3d33d;
     padding: 15px;
@@ -61,7 +62,8 @@ header {
     font-style: normal;
     border-radius: 5px;
 }
-.voltar:hover{
+
+.voltar:hover {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.603);
     transform: scale(1.0);
@@ -83,43 +85,52 @@ footer {
 
 .navegation {
     display: flex;
-    
+
 }
-.redes-sociais a{
+
+.redes-sociais a {
     color: rgba(255, 255, 255, 0.459);
     font-style: italic;
 }
 
-.redes-sociais{
+.redes-sociais {
     display: flex;
     flex-direction: column;
 }
 
 
-.coluna{
+.coluna {
     color: rgba(255, 255, 255, 0.637);
     padding: 20px;
     padding-right: 40px;
 }
 
+.coluna a:hover {
+    color: #82A69C
+}
+
 /*------------------------------------ Corpo -----------------------------------*/
 
-.corpo{
+.corpo {
     padding: 50px 100px;
 }
 
 /*------------------------------------ Fonte -----------------------------------*/
-h1{
-    
+i {
+    /*Aileron Light Italic*/
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
 /*------------------------------------ Menu ------------------------------------*/
-button{
+button {
     background-color: #1D1D1B;
     color: white;
     border: 0;
     border-radius: 5px;
     padding: 12px 20px;
-margin: 7px 0;    
+    margin: 7px 0;
 }
+
 /*------------------------------------------------------------------------------*/

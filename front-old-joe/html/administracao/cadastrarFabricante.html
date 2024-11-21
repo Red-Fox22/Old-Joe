@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/iwv4ytx.css">
     <link rel="stylesheet" href="../../style/administrador.css">
     <link rel="shortcut icon" href="../../img/others/favicon_claro.png" type="image/x-icon">
-    <script src="cadastrarUsuario.js"></script>
-    <title>Old Joe - Home</title>
+    <script src="cadastrarFabricante.js" defer></script>
+    <title>Area do Administrador - Cadastrar Fabricante</title>
 </head>
 
 <body>
@@ -20,8 +20,9 @@
         <div class="menus">
             <a href='../../index.html' class="voltar" aria-label="Voltar para o site do usuário">Voltar</a>
             <a href='cadastrarProduto.html' class=" navegation-btn">Cadastrar Novo Produto</a>
-            <a href='cadastrarUsuario.html' class=" navegation-btn">Cadastrar Novo Usuário</a>
-            <a href='postagemBlog.html' class=" navegation-btn">Escrever Nova Postagem</a>
+            <a href='cadastrarFabricante-admVersion.html' class=" navegation-btn">Cadastrar Novo Fabricante</a>
+            <a href='cadastrarFabricante.html' class=" navegation-btn">Cadastrar Fabricante</a>
+            <a href='administrador.html' class=" navegation-btn">Mais Funções...</a>
         </div>
     </header>
 
@@ -33,24 +34,24 @@
 
 
     <div class="corpo">
-        <h1>Cadastrar Usuário</h1><br>
+        <h1>Cadastrar Fabricante</h1><br>
         <form action="">
-            <h2 style="font-style: italic;">Perfil do Usuário</h2>
+            <h2 style="font-style: italic;">Perfil do Fabricante</h2>
 
             <div class="digitar">
                 <div class="secoes">
-                    <label for="nomeCliente">Nome:</label><br>
-                    <input type="text" id="nomeCliente" placeholder="Digite o nome do Usuário" required><br>
+                    <label for="nomeFabricante">Nome:</label><br>
+                    <input type="text" id="nomeFabricante" placeholder="Digite o nome do Fabricante" required><br>
                 </div>
 
                 <div class="secoes">
-                    <label for="sobrenomeCliente">Sobrenome:</label><br>
-                    <input type="text" id="sobrenomeCliente" placeholder="Digite o sobrenome do Usuário" required><br>
+                    <label for="marcaFabricante">Sobrenome:</label><br>
+                    <input type="text" id="marcaFabricante" placeholder="Digite o marca do Fabricante" required><br>
                 </div>
 
                 <div class="secoes">
-                    <label for="cpfCliente">CPF:</label><br>
-                    <input type="text" id="cpfCliente" placeholder="Digite o CPF do Usuário" required><br>
+                    <label for="cnpjFabricante">CNPJ:</label><br>
+                    <input type="text" id="cnpjFabricante" placeholder="Digite o CNPJ do Fabricante" required><br>
                 </div>
 
                 <div class="secoes">
@@ -70,19 +71,19 @@
                             input.value = value;
                         }
                     </script>
-                    <label for="telefone">Número de Telefone:</label><br>
-                    <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"
-                        aria-label="Digite o número de telefone do Usuário" maxlength="15"
+                    <label for="telefoneFabricante">Número de Telefone:</label><br>
+                    <input type="text" id="telefoneFabricante" name="telefone" placeholder="(XX) XXXXX-XXXX"
+                        aria-label="Digite o número de telefone do Fabricante" maxlength="15"
                         oninput="mascaraTelefone(event)" required>
                 </div>
 
                 <div class="secoes">
-                    <label for="emailCliente">Email:</label><br>
-                    <input type="text" id="emailCliente" placeholder="Digite o Email do Usuário" required><br>
+                    <label for="emailFabricante">Email:</label><br>
+                    <input type="text" id="emailFabricante" placeholder="Digite o Email do Fabricante" required><br>
                 </div>
                 <div class="secoes">
                     <label for="senha">Senha:</label><br>
-                    <input type="password" id="senha" placeholder="Crie uma senha para o Usuário" required><br>
+                    <input type="password" id="senha" placeholder="Crie uma senha para o Fabricante" required><br>
                 </div>
 
                 <br><hr><br>
@@ -101,7 +102,7 @@
                     <input type="text" id="complemento" placeholder="Digite o complemento do endereço"><br>
                 </div>
                 <div class="secoes">
-                    <label for="bairro">Complemento:</label><br>
+                    <label for="bairro">Bairro:</label><br>
                     <input type="text" id="bairro" placeholder="Digite o bairro"><br>
                 </div>
                 <div class="secoes">
@@ -117,14 +118,14 @@
                     <input type="text" id="cep" placeholder="Digite o CEP"><br>
                 </div>
                 <div class="secoes">
-                    <label for="status">Status:</label><br>
-                    <input type="text" id="status" placeholder="Digite o Status do Usuário"><br>
+                    <label for="statusFabricante">Status:</label><br>
+                    <input type="text" id="statusFabricante" placeholder="Digite o Status do Fabricante"><br>
                 </div>
 
             </div>
             <br>
             <hr><br>
-            <button type="submit">Cadastrar Usuário</button>
+            <button type="submit" id="cadastrarFabricante">Cadastrar Fabricante</button>
         </form>
     </div>
 

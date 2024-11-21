@@ -105,21 +105,27 @@ footer {
     padding-right: 40px;
 }
 
+.coluna a:hover{
+    color:#F4CE6D
+}
+
 /*------------------------------------ Corpo -----------------------------------*/
 
 .corpo {
     padding: 50px 100px;
 }
-.secoes{
-    padding: 5px 0 ;
+
+.secoes {
+    padding: 5px 0;
 }
 
 /*------------------------------ Tela Inicial Adm ------------------------------*/
 
-.tela-inicial-adm{
+.tela-inicial-adm {
     display: flex
 }
-.texto{
+
+.texto {
     align-content: center;
     padding: 0 10vh;
 }
@@ -135,10 +141,34 @@ button {
     margin: 7px 0;
 }
 
-.digitar input{
+.digitar input {
     width: 15vw;
 }
 
 
 /*------------------------------------------------------------------------------*/
+.funcoes_adm {
+    display: flex;
+    flex-direction: row;
+}
+.f1{
+    padding-right: 30px;
+}
+.f1 a{
+    padding: 30px;
+    padding-left: 0;
+    color: #1D1D1B;
+    border: none;
 
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.f1 a:hover{
+    color:#F4CE6D
+}
+.funcoes_adm a{
+    padding-left: 0;
+    padding: 5px;
+}

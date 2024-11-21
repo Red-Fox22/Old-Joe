@@ -4,19 +4,18 @@ let cadastrarProduto = document.getElementById('cadastrarProduto')
 cadastrarProduto.addEventListener('click', (e)=>{
     e.preventDefault()
 
+    let codFabricante = document.getElementById('codFabricante').value
     let nomeProduto = document.getElementById('nomeProduto').value
     let descricaoProduto = document.getElementById('descricaoProduto').value
     let precoProduto = document.getElementById('precoProduto').value
-    let quantidadeProduto = document.getElementById('quantidadeProduto').value
-    let imagem = document.getElementById('imagem').value //??
    				
 
     const dados = {
+        codFabricante: codFabricante,
         nomeProduto: nomeProduto,
         descricaoProduto: descricaoProduto,
         precoProduto: precoProduto,
-        quantidadeProduto: quantidadeProduto,
-        imagem: imagem
+        quantidadeProduto: quantidadeProduto
     }
 
     fetch('http://localhost:3000/produto', {

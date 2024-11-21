@@ -19,21 +19,16 @@ const Produto = db.define('produto', {
         type: DataTypes.STRING(40),
         allowNull: false
     },
-    quantidadeProduto: {
-        type: DataTypes.INTEGER,
+    descricaoProduto:{
+        type: DataTypes.STRING(40),
         allowNull: false
     },
     precoProduto: {
         type: DataTypes.DECIMAL(10,2),
         allowNull: false
     },
-    descricaoProduto:{
-        type: DataTypes.STRING(40),
-        allowNull: false
-    },
-    //??????????????????????????????????
-    imagem:{
-        type: DataTypes.STRING,
+    quantidadeProduto: {
+        type: DataTypes.INTEGER,
         allowNull: false
     }
 },{
