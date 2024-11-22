@@ -20,11 +20,18 @@ app.use(cors())
 
 
 app.post('/cliente', controllerCliente.cadastrarCliente)
+app.get('/clientes', controllerCliente.listarCliente)
+app.get('/cliente', controllerCliente.consultarCliente)
+app.delete('/cliente/:id', controllerCliente.apagarCliente)
 app.put('/cliente', controllerCliente.atualizarCliente)
 
 /*------------------------------------------------*/
 
 app.post('/produto', controllerProduto.cadastrarProduto)
+app.get('/produtos', controllerProduto.listarProduto)
+app.get('/produto', controllerProduto.consultarProduto)
+app.delete('/produto/:id', controllerProduto.apagarProduto)
+app.put('/produto', controllerProduto.atualizarProduto)
 
 /*------------------------------------------------*/
 
@@ -36,7 +43,6 @@ app.put('/fabricante', controllerFabricante.atualizarFabricante)
 
 /*------------------------------------------------*/
 
-app.post('/produto', controllerProduto.cadastrarProduto)
 
 /*------------------------------------------------*/
 
