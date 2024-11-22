@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/iwv4ytx.css">
     <link rel="stylesheet" href="../../../style/administrador.css">
     <link rel="shortcut icon" href="../../../img/others/favicon_claro.png" type="image/x-icon">
-    <title>Fabricante - Área do Administrador</title>
+    <script src="buscarFabricante.js" defer></script>
+    <title>Apagar Fabricante</title>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
         <div class="menus">
             <a href='../../../html/usuario/index.html' class="voltar" aria-label="Voltar para o site do usuário">Voltar</a>
             <!-- ------------------------------------------------------------- -->
-            <a href='Produto.html' class=" navegation-btn">Produto</a>
-            <a href='Cliente.html' class=" navegation-btn">Cliente</a>
-            <a href='Fabricante.html' class=" navegation-btn">Fabricante</a>
-            <a href='Pedido.html' class=" navegation-btn">Pedido</a>
+            <a href='../Inicial/Produto.html' class=" navegation-btn">Produto</a>
+            <a href='../Inicial/Cliente.html' class=" navegation-btn">Cliente</a>
+            <a href='../Inicial/Fabricante.html' class=" navegation-btn">Fabricante</a>
+            <a href='../Inicial/Pedido.html' class=" navegation-btn">Pedido</a>
         </div>
     </header>
 
@@ -33,24 +34,17 @@
 
 
 
-    <div class="tela-inicial-adm">
-        <img src="../../../img/others/two-espresso-cups-coffee-engine.jpg" alt="Xícara de Café" height="500vh">
-        <div class="texto">
-            <h1>Fabricante</h1>
-            <hr><br>
-            <div class="funcoes_adm">
-                
-                <div class="f1">
-                    <a href='../Fabricante/cadastrarFabricante.html'>Cadastrar Fabricante</a><br>
-                    <a href='../Fabricante/apagarFabricante.html'>Apagar Fabricante</a><br>
-                    <a href='../Fabricante/listarFabricante.html'>Listar Fabricante</a><br>
-                    <a href='../Fabricante/buscarFabricante.html'>Buscar Fabricante</a><br>
-                    <a href='../Fabricante/atualizarFabricante.html'>Atualizar Fabricante</a><br>
-                </div>
+    <div class="corpo">
+        <h1>Buscar Fabricante</h1><br>
 
-            </div>
-
+        <div class="secoes">
+            <label for="marcaFabricante">Digite a marca do Fabricante:</label><br>
+            <input type="text" id="marcaFabricante" placeholder="marca"><br>
         </div>
+        
+        <button id="consult">Cosultar</button>
+        <br><br>
+        <div id="res"></div>
     </div>
 
 

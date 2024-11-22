@@ -27,7 +27,7 @@ const consultarFabricante = async (req,res)=>{
     const valor = req.query
     console.log(valor)
     try{
-        const pesq = await Fabricante.findOne({where: { marca: valor.marca}})
+        const pesq = await Fabricante.findOne({where: { marcaFabricante: valor.marcaFabricante}})
         if(pesq === null){
             console.log('Marca não encontrada no banco de dados!')
             res.status(404).json({message: "Marca não encontrada no banco de dados!"})
