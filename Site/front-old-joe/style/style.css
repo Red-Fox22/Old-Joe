@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+
+    /*_________ Font _________*/
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*----------------------------------- Header -----------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1D1D1B;
+    padding: 20px;
+    vertical-align: top;
+    color: #E4E2DD;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.logo {
+    margin: 2px 50px 2px 2px;
+
+    /*Aileron Regular*/
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    line-height: 0.8;
+}
+
+.navegation-btn {
+    padding: 30px;
+    color: #E4E2DD;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navegation-btn:hover {
+    border-radius: 5px;
+    background-color: #d3d3d33d;
+    transform: scale(1.0);
+    transition: 400ms ease;
+}
+
+.voltar {
+    background-color: #d3d3d33d;
+    padding: 15px;
+    color: #E4E2DD;
+    border: none;
+
+    /*Aileron Light */
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.voltar:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.603);
+    transform: scale(1.0);
+    transition: 400ms ease
+}
+.login{
+    position: fixed;
+    margin-left: 1250px;
+}
+
+/*----------------------------------- Footer -----------------------------------*/
+
+footer {
+    align-items: center;
+    background-color: #1D1D1B;
+    padding: 20px;
+    color: #E4E2DD;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+}
+
+.navegation {
+    display: flex;
+
+}
+
+.redes-sociais a {
+    color: rgba(255, 255, 255, 0.459);
+    font-style: italic;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.coluna {
+    color: rgba(255, 255, 255, 0.637);
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.coluna a:hover {
+    color: #82A69C
+}
+
+/*------------------------------------ Corpo -----------------------------------*/
+
+.corpo {
+    padding: 50px 100px;
+}
+
+/*------------------------------------ Fonte -----------------------------------*/
+i {
+    /*Aileron Light Italic*/
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*------------------------------------ Menu ------------------------------------*/
+button {
+    background-color: #1D1D1B;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 7px 0;
+}
+
+/*------------------------------------------------------------------------------*/
